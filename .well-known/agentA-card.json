@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "agentId": "0",
+  "name": "Agent A",
+  "description": "An ERC-8004 compliant AI agent with on-chain identity, reputation, and validation",
+  "domain": "dhaivat97.github.io/agentA-card",
+  
+  "identity": {
+    "registryAddress": "0x1f6e834b22C8913A4AbC396264BC6082817a4DFf",
+    "chainId": 11155111,
+    "agentAddress": "0x9dC034b709F98b34af2F4cc9Cf324E56A830719A",
+    "registeredAt": "2024-12-04T00:00:00Z"
+  },
+  
+  "capabilities": {
+    "skills": [
+      "data-analysis",
+      "text-generation",
+      "code-execution"
+    ],
+    "languages": ["en"],
+    "inputFormats": ["text/plain", "application/json"],
+    "outputFormats": ["text/plain", "application/json"]
+  },
+  
+  "endpoints": {
+  "a2a": {
+    "protocol": "https",
+    "url": "https://dhaivat97.github.io/agentA-card/agent/invoke",
+    "methods": ["POST"]
+  },
+    "mcp": {
+      "protocol": "stdio",
+      "command": "npx",
+      "args": ["-y", "@your-org/agent-mcp-server"]
+    }
+  },
+  
+  "trust": {
+    "models": ["reputation", "validation"],
+    "reputationThreshold": 0.7,
+    "validationRequired": false,
+    "minimumStake": "0"
+  },
+  
+  "pricing": {
+    "currency": "ETH",
+    "ratePerRequest": "0.001",
+    "rateUnit": "request"
+  },
+  
+  "metadata": {
+  "website": "https://dhaivat97.github.io/agentA-card",
+  "documentation": "https://dhaivat97.github.io/agentA-card/docs",
+  }
+};
+
+
+
+
+  
